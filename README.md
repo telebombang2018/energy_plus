@@ -39,9 +39,12 @@ killall -9 bash
 ترمینال جدید باز کنید 
 
 cd energy_plus
+
 chmod +x ./energy
-chmod +x ./Company 
-screen ./Company
+
+chmod +x ./autoenergy 
+
+screen ./autoenergy
 --------------------------------------------------
 توجه کنید ربات بدون هلپر میباشد 
 سوال نپرسید 
