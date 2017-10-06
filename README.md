@@ -1,14 +1,10 @@
 # **CerNerpersian** #
 
-[![Library](https://img.shields.io/badge/TDLib-beta-brightgreen.svg)](https://core.telegram.org/tdlib)
-[![Telegram-bot](https://img.shields.io/badge/TDCli-Bitbucket-green.svg)](https://valtman.name/telegram-bot)
-[![Lua](https://img.shields.io/badge/Lua-5.2-blue.svg)](https://www.lua.org/)
-[![Redis](https://img.shields.io/badge/Redis-3.2.8-red.svg)](https://redis.io/)
-
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install git redis-server lua5.2 liblua5.2-dev lua-lgi libnotify-dev unzip tmux -y && add-apt-repository ppa:ubuntu-toolchain-r/test && sudo apt-get update && apt-get upgrade && sudo apt-get install libconfig++9v5 libstdc++6 && sudo apt autoremove
 *******************************************************************
-
-cd energy_cer
+gitclone https://github.com/telebombang2018/energy_plus
+*****************************************************************
+cd energy_persian
 **********************************************************************
 chmod +x C 
 **********************************************************************
@@ -42,7 +38,7 @@ killall -9 bash
 **********************************************************************
 ترمینال جدید باز کنید 
 
-d energy_cer
+d energy_persian
 chmod +x ./C 
 chmod +x ./Company 
 screen ./Company
