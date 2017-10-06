@@ -1,4 +1,5 @@
-# **CerNerpersian** #
+# **CerNer_persian** #
+# **ستاره یادت نره حمایت کن** #
 
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install git redis-server lua5.2 liblua5.2-dev lua-lgi libnotify-dev unzip tmux -y && add-apt-repository ppa:ubuntu-toolchain-r/test && sudo apt-get update && apt-get upgrade && sudo apt-get install libconfig++9v5 libstdc++6 && sudo apt autoremove
 *******************************************************************
