@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install git redis
 *******************************************************************
 git clone https://github.com/telebombang2018/energy_plus
 *****************************************************************
-cd energy_persian
+cd energy_plus
 **********************************************************************
 chmod +x C 
 **********************************************************************
@@ -38,7 +38,7 @@ killall -9 bash
 **********************************************************************
 ترمینال جدید باز کنید 
 
-d energy_persian
+cd energy_plus
 chmod +x ./C 
 chmod +x ./Company 
 screen ./Company
