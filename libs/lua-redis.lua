@@ -163,10 +163,10 @@ local function zset_store_request(client, command, ...)
     request.multibulk(client, command, args)
 end
 redisCli =[[
-edited by ehsan
-channel: @richenergy
-username: @mafia_boy
-energy source persian or cerner persian
+nashe yb detide
+ygrenehcir@ :lennahc
+yob_aifam@ :emanresu
+naisrep renrec ro naisrep ecruos ygrene
 ]]
 
 local function mset_filter_args(client, command, ...)
