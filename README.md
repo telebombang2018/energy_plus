@@ -1,26 +1,25 @@
-# **CerNerpersian** #
-
-[![Library](https://img.shields.io/badge/TDLib-beta-brightgreen.svg)](https://core.telegram.org/tdlib)
-[![Telegram-bot](https://img.shields.io/badge/TDCli-Bitbucket-green.svg)](https://valtman.name/telegram-bot)
-[![Lua](https://img.shields.io/badge/Lua-5.2-blue.svg)](https://www.lua.org/)
-[![Redis](https://img.shields.io/badge/Redis-3.2.8-red.svg)](https://redis.io/)
+# **CerNer_persian** #
+# **ستاره یادت نره حمایت کن** #
 
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install git redis-server lua5.2 liblua5.2-dev lua-lgi libnotify-dev unzip tmux -y && add-apt-repository ppa:ubuntu-toolchain-r/test && sudo apt-get update && apt-get upgrade && sudo apt-get install libconfig++9v5 libstdc++6 && sudo apt autoremove
 *******************************************************************
-
-cd energy_cer
+git clone https://github.com/telebombang2018/energy_plus
+*****************************************************************
+cd energy_plus
 **********************************************************************
-chmod +x C 
+chmod +x energy
 **********************************************************************
-./C install
+./energy install
 **********************************************************************
-./C config  
+./energy config  
 **********************************************************************
-./C login-Cli  
+./energy login-Cli  
  
 جهت فعال کردن در اکانت 
+دوستان اگه شماره رباتتون روسیه باشه تو همه گروها با سرعت بالا جواب میده
+اگه شماره های یگه باشه دیر جواب میده
 **********************************************************************
-./C login-Api  
+./energy login-Api  
 
 جهت فعال کردن در بات 
 **********************************************************************
@@ -33,7 +32,7 @@ SUDO_ID = {323046540,ایدی خودتون }
 Full_Sudo = {323046540,ایدی خودتون}
 ChannelLogs= -1001234567890
 **********************************************************************
-./C start  
+./energy start  
  فعال سازی
 **********************************************************************
 اتولانچ :  
@@ -42,13 +41,17 @@ killall -9 bash
 **********************************************************************
 ترمینال جدید باز کنید 
 
-d energy_cer
-chmod +x ./C 
-chmod +x ./Company 
-screen ./Company
+cd energy_plus
+
+chmod +x ./energy
+
+chmod +x ./autoenergy 
+
+screen ./autoenergy
 --------------------------------------------------
 توجه کنید ربات بدون هلپر میباشد 
 سوال نپرسید 
+به زودی هلپر کامل میشه و روی سورس نصب میشه
 --------------------------------------------------
 درصورت مشکل نصب و داشتن ارور کد های زیر را بصورت تک تک در root (ترمینال[سرور]) وارد کنید 
 
