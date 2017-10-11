@@ -2768,177 +2768,177 @@ sendText(msg.chat_id, msg.id, '• `Lock` *Forward*  is _Already_  `Disable`\n\n
 end
 end
 --------------------------------------------
--------------------------Mutes-----------------------------------------
+-------------------------locks-----------------------------------------
 if energy == 'قفل متن' then
-if redis:get('Mute:Text:'..msg.chat_id) then
+if redis:get('lock:Text:'..msg.chat_id) then
 sendText(msg.chat_id, msg.id, '• `Lock` *Text*  is _Already_ `Enable`\n\n' , 'md')
 else
 sendText(msg.chat_id, msg.id, '• `Lock` *Text* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Text:'..msg.chat_id,true)
+redis:set('lock:Text:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن متن' then
-if redis:get('Mute:Text:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Text* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Text:'..msg.chat_id)
+if redis:get('lock:Text:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Text* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Text:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Text*  is _Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Text*  is _Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل مخاطب' then
-if redis:get('Mute:Contact:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Contact*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Contact:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Contact*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Contact* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Contact:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Contact* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Contact:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن مخاطب' then
-if redis:get('Mute:Contact:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Contact* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Contact:'..msg.chat_id)
+if redis:get('lock:Contact:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Contact* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Contact:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Contact*  is _Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Contact*  is _Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل فایل' then
-if redis:get('Mute:Document:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Document*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Document:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Document*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Document* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Document:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Document* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Document:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن فایل' then
-if redis:get('Mute:Document:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Document* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Document:'..msg.chat_id)
+if redis:get('lock:Document:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Document* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Document:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Document*  is _Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Document*  is _Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل مکان' then
-if redis:get('Mute:Location:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Location*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Location:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Location*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Location* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Location:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Location* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Location:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن مکان' then
-if redis:get('Mute:Location:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Location* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Location:'..msg.chat_id)
+if redis:get('lock:Location:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Location* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Location:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Location*  _is Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Location*  _is Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل ویس' then
-if redis:get('Mute:Voice:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Voice*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Voice:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Voice*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Voice* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Voice:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Voice* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Voice:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن ویس' then
-if redis:get('Mute:Voice:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Voice* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Voice:'..msg.chat_id)
+if redis:get('lock:Voice:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Voice* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Voice:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Voice*  _is Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Voice*  _is Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل عکس' then
-if redis:get('Mute:Photo:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Photo*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Photo:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Photo*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Photo* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Photo:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Photo* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Photo:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن عکس' then
-if redis:get('Mute:Photo:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Photo* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Photo:'..msg.chat_id)
+if redis:get('lock:Photo:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Photo* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Photo:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Photo*  _is Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Photo*  _is Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل بازی' then
-if redis:get('Mute:Game:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Game*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Game:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Game*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Game* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Game:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Game* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Game:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن بازی' then
-if redis:get('Mute:Game:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Game* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Game:'..msg.chat_id)
+if redis:get('lock:Game:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Game* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Game:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Game*  _is Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Game*  _is Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل ویدیو' then
-if redis:get('Mute:Video:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Video*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Video:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Video*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Video* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Video:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Video* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Video:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن ویدیو' then
-if redis:get('Mute:Video:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Video* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Video:'..msg.chat_id)
+if redis:get('lock:Video:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Video* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Video:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Video*  _is Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Video*  _is Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل موزیک' then
-if redis:get('Mute:Music:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Music*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Music:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Music*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Music* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Music:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Music* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Music:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن موزیک' then
-if redis:get('Mute:Music:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Music* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Music:'..msg.chat_id)
+if redis:get('lock:Music:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Music* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Music:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Music*  _is Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Music*  _is Already_  `Disable`\n\n' , 'md')
 end
 end
 ---------------------------------------------------------------------------------
 if energy == 'قفل گیف' then
-if redis:get('Mute:Gif:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Gif*  is _Already_ `Enable`\n\n' , 'md')
+if redis:get('lock:Gif:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Gif*  is _Already_ `Enable`\n\n' , 'md')
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Gif* `Has Been Enable`\n\n' , 'md')
-redis:set('Mute:Gif:'..msg.chat_id,true)
+sendText(msg.chat_id, msg.id, '• `lock` *Gif* `Has Been Enable`\n\n' , 'md')
+redis:set('lock:Gif:'..msg.chat_id,true)
 end
 end
 if energy == 'بازکردن گیف' then
-if redis:get('Mute:Gif:'..msg.chat_id) then
-sendText(msg.chat_id, msg.id, '• `Mute` *Gif* `Has Been Disable`\n\n' , 'md')
-redis:del('Mute:Gif:'..msg.chat_id)
+if redis:get('lock:Gif:'..msg.chat_id) then
+sendText(msg.chat_id, msg.id, '• `lock` *Gif* `Has Been Disable`\n\n' , 'md')
+redis:del('lock:Gif:'..msg.chat_id)
 else
-sendText(msg.chat_id, msg.id, '• `Mute` *Gif*  _is Already_  `Disable`\n\n' , 'md')
+sendText(msg.chat_id, msg.id, '• `lock` *Gif*  _is Already_  `Disable`\n\n' , 'md')
 end
 end
------------End Mutes---------------
+-----------End locks---------------
 ----------------------------------------------------------------------------------
 -----------End locks---------------
 ----------------------------------------------------------------------------------
