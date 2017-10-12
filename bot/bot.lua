@@ -2311,7 +2311,7 @@ sendText(msg.chat_id, msg.id, '• `Flood time change to` *'..num..'*', 'md')
 end
 end
 if energy and energy:match('^پاک کردن (%d+)$') then
-local limit = tonumber(energy:match('^rmsg (%d+)$'))
+local limit = tonumber(energy:match('^پاک کردن (%d+)$'))
 if limit > 100 then
 sendText(msg.chat_id, msg.id, '*عددی بین * [`1-100`] را انتخاب کنید', 'md')
 else
